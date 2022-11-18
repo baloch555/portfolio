@@ -1868,13 +1868,13 @@
             <div class="card mb-5">
               <div class="card-body p-sm-5">
                 <h2 class="text-center mb-4">Contact Me</h2>
-                <form method="post">
+                <form method="post" onsubmit="onSubmit();" id="my-form">
                   <!-- Start: Success Example -->
                   <div class="mb-3">
                     <input
                       class="form-control"
                       type="text"
-                      id="name-2"
+                      id="name"
                       name="name"
                       placeholder="Name"
                     />
@@ -1884,7 +1884,7 @@
                     <input
                       class="form-control"
                       type="email"
-                      id="email-2"
+                      id="email"
                       name="email"
                       placeholder="Email"
                     />
@@ -1893,14 +1893,18 @@
                   <div class="mb-3">
                     <textarea
                       class="form-control"
-                      id="message-2"
+                      id="message"
                       name="message"
                       rows="6"
                       placeholder="Message"
                     ></textarea>
                   </div>
                   <div>
-                    <button class="btn btn-primary d-block w-100" type="submit">
+                    <button
+                      class="btn btn-primary d-block w-100"
+                      type="submit"
+                      id="submit"
+                    >
                       Send
                     </button>
                   </div>
@@ -1943,5 +1947,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/js/script.min.js?h=952c650a65c7d3d136229d4b22b84f57"></script>
+    <script src="assets/js/contact.js"></script>
   </body>
 </html>

@@ -193,15 +193,14 @@
       >
         <h1 style="font-size: 38px; padding: 27px">Get in touch</h1>
         <p class="text-center">Feel free to contact me&nbsp;</p>
-        <form class="text-start" id="form-login">
+        <form class="text-start" id="form-login" onsubmit="onSubmit();">
           <div class="mb-3">
             <label class="form-label" id="lbl-nombre" for="txt-nombre"
               >Name</label
             ><input
               class="form-control"
               type="text"
-              id="txt-nombre"
-              required=""
+              id="name"
               minlength="3"
               maxlength="50"
             />
@@ -212,9 +211,8 @@
             ><input
               class="form-control"
               type="text"
-              id="txt-email"
+              id="email"
               inputmode="email"
-              required=""
               minlength="3"
               maxlength="50"
             />
@@ -224,23 +222,25 @@
               >Message</label
             ><textarea
               class="form-control form-control-lg"
-              id="txt-consulta"
+              id="message"
               rows="5"
             ></textarea>
           </div>
+          <button
+            class="btn btn-primary"
+            id="btn-contacto"
+            type="submit"
+            style="
+              --bs-primary: #256db4;
+              --bs-primary-rgb: 37, 109, 180;
+              background: #256db4;
+              width: 100%;
+              text-align: center;
+            "
+          >
+            Submit
+          </button>
         </form>
-        <button
-          class="btn btn-primary"
-          id="btn-contacto"
-          type="submit"
-          style="
-            --bs-primary: #256db4;
-            --bs-primary-rgb: 37, 109, 180;
-            background: #256db4;
-          "
-        >
-          Submit
-        </button>
       </div>
     </header>
     <footer
@@ -273,5 +273,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.min.js?h=952c650a65c7d3d136229d4b22b84f57"></script>
+    <script src="assets/js/contact2.js"></script>
   </body>
 </html>
